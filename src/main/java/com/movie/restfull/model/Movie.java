@@ -30,8 +30,8 @@ public class Movie {
     @Column(name = "image")
     private String image;
     @Column(name = "created_at")
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
     @Column(name = "updated_at")
-    private Date updatedAt;
+    private LocalDateTime updatedAt;
 }
