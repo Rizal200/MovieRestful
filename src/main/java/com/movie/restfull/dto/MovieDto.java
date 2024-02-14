@@ -26,9 +26,9 @@ public class MovieDto {
     private String image;
     @NotNull
     @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date createdAt;
+    private LocalDateTime createdAt;
     @NotNull
     @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date updatedAt;
+    private LocalDateTime updatedAt;
 
 }
