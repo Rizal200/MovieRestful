@@ -1,4 +1,4 @@
-package com.movie.restfull.Model;
+package com.movie.restfull.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.Date;
+
 @Entity
 @Getter
 @Setter
@@ -28,8 +30,8 @@ public class Movie {
     @Column(name = "image")
     private String image;
     @Column(name = "created_at")
-    private LocalDateTime createdAt;
+    private Date createdAt;
 
     @Column(name = "updated_at")
-    private LocalDateTime updatedAt;
+    private Date updatedAt;
 }
